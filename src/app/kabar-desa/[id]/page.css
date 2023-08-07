@@ -1,0 +1,147 @@
+.ql-indent-1 {
+  margin-left: 24px;
+  list-style: circle;
+}
+
+.detail-kabar__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.detail-kabar__section {
+  padding: 0 256px;
+  width: 100%;
+}
+
+.detail-kabar__image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.detail-kabar__section {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+
+.detail-kabar__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 16px 0 4px;
+}
+
+.detail-kabar__date_and_viewCount {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.detail-kabar__trending_view-count_text {
+  color: var(--netral-60, #8e8e8e);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex: 1 0 0;
+}
+
+.detail-kabar__date {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9e9e9e;
+}
+
+.detail-kabar__trending_view-count {
+  display: flex;
+}
+
+.detail-kabar__author {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--netral-80, #4f4f4f);
+}
+
+.detail-kabar__content {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--netral-100, #000000);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.detail-kabar__content p {
+  margin-bottom: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.detail-kabar__content ul,
+.detail-kabar__content ol {
+  margin-left: 24px;
+}
+
+.detail-kabar__content li:last-child {
+  margin-bottom: 16px;
+}
+
+.detail-kabar__footer {
+  background: #2b50aa;
+  padding: 36px;
+  flex-shrink: 0;
+}
+
+.detail-kabar__footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Responsive */
+/* Tab Layout */
+@media (max-width: 1024px) {
+  .detail-kabar__section {
+    padding: 0 64px;
+  }
+
+  .detail-kabar__image {
+    height: 400px;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .detail-kabar__section {
+    padding: 0 32px;
+    margin-bottom: 16px;
+  }
+
+  .detail-kabar__image {
+    height: 300px;
+  }
+}
+
+/* Mobile Small Layout */
+@media (max-width: 425px) {
+  .detail-kabar__section {
+    padding: 0 16px;
+  }
+
+  .detail-kabar__image {
+    height: 200px;
+  }
+}

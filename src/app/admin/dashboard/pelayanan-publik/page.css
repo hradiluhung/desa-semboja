@@ -1,0 +1,224 @@
+.pelayanan-publik__heading {
+  margin-top: 64px;
+  display: flex;
+  gap: 8px;
+}
+
+.pelayanan-publik__title:nth-child(1) {
+  font-size: 36px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.pelayanan-publik__title:nth-child(2) {
+  font-size: 36px;
+  background: linear-gradient(55deg, #92bcea 0%, #69b578 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.pelayanan-publik__action {
+  margin-top: 16px;
+}
+
+.pelayanan-publik__button {
+  display: inline;
+  border-radius: 48px;
+  background: #69b578;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.pelayanan-publik__content {
+  margin-top: 64px;
+  width: 100%;
+  min-height: 400px;
+}
+
+.pelayanan-publik__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.pelayanan-publik__table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-top: 32px;
+}
+
+.pelayanan-publik__head {
+  text-align: center;
+  border-bottom: 1px solid var(--netral-20, #e0e0e0);
+}
+
+.pelayanan-publik__row--head th {
+  padding: 16px;
+}
+
+.pelayanan-publik__row--body {
+  background-color: #fff;
+}
+
+.pelayanan-publik__row--body:nth-child(even) {
+  background-color: var(--netral-10, #f5f5f5);
+}
+
+.pelayanan-publik__row--body:hover {
+  background-color: var(--netral-30, #e5e5e5);
+}
+
+.pelayanan-publik__cell {
+  padding: 12px;
+}
+
+.no-data {
+  text-align: center;
+}
+
+.pelayanan-publik__cell_no {
+  text-align: center;
+}
+
+.pelayanan-publik__cell_image-container {
+  text-align: center;
+}
+
+.pelayanan-publik__cell_image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.pelayanan-publik__cell_title {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #2b50aa;
+}
+
+.pelayanan-publik__cell_action {
+  text-align: center;
+}
+
+.pelayanan-publik__button-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pelayanan-publik__table-button--edit {
+  background: #69b578;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.pelayanan-publik__table-button--delete {
+  background: #e74c3c;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.pelayanan-publik__cell_last-updated {
+  text-align: center;
+  color: var(--netral-50, #828282);
+}
+
+.pelayanan-publik__modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pelayanan-publik__modal-content {
+  width: 500px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pelayanan-publik__modal-text {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.pelayanan-publik__modal-text span {
+  font-weight: 600;
+}
+
+.pelayanan-publik__modal-button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.pelayanan-publik__modal-button--cancel {
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: 1px solid var(--netral-60, #828282);
+  background: none;
+  color: var(--netral-60, #828282);
+}
+
+.pelayanan-publik__modal-button--delete {
+  background: #e74c3c;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.pelayanan-publik__no-data {
+  padding: 24px;
+  text-align: center;
+}

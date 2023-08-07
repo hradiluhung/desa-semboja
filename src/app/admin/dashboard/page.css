@@ -1,0 +1,23 @@
+.admin-welcome__heading {
+  margin-top: 64px;
+}
+
+.admin-welcome__title {
+  font-size: 36px;
+  background: linear-gradient(55deg, #92bcea 0%, #69b578 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.admin-welcome__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #000;
+  margin-bottom: 16px;
+}

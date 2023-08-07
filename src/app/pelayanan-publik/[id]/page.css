@@ -1,0 +1,75 @@
+.detail-pelayanan__section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 256px;
+}
+
+.detail-pelayanan__image {
+  width: 100%;
+  min-height: 200px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.detail-pelayanan__title {
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.detail-pelayanan__subtitle {
+  color: #2b50aa;
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.detail-pelayanan__content {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 36px;
+}
+
+.detail-pelayanan__content p {
+  margin-bottom: 16px;
+}
+
+.detail-pelayanan__content ul,
+.detail-pelayanan__content ol {
+  margin-left: 24px;
+}
+
+.detail-pelayanan__content ul li:last-child,
+.detail-pelayanan__content ol li:last-child {
+  margin-bottom: 8px;
+}
+
+.detail-pelayanan__footer {
+  background: #2b50aa;
+  padding: 36px;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.detail-pelayanan__footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.detal-pelayanan__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

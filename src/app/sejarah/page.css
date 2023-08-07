@@ -1,0 +1,203 @@
+.sejarah__section-1 {
+  display: flex;
+  padding: 80px 128px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.sejarah__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.sejarah__title span:nth-child(1) {
+  color: var(--netral-80, #363636);
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sejarah__title span:nth-child(2) {
+  background: linear-gradient(55deg, #92bcea 0%, #69b578 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sejarah__content {
+  color: var(--netral-80, #363636);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
+}
+
+.sejarah__section-2 {
+  display: flex;
+  padding: 80px 128px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.sejarah__kepala-desa-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.sejarah__kepala-desa-title {
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(55deg, #92bcea 0%, #69b578 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sejarah__kepala-desa-subtitle {
+  color: var(--netral-80, #363636);
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sejarah__kepala-desa-list {
+  width: 100%;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sejarah__kepala-desa-item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.sejarah__kepala-desa-item_image {
+  width: auto;
+  height: auto;
+}
+
+.sejarah__kepala-desa-item_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.sejarah__kepala-desa-item_name {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.sejarah__kepala-desa-item_tahun {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sejarah__footer {
+  background: #2b50aa;
+  padding: 36px;
+  flex-shrink: 0;
+}
+
+.sejarah__footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Responsive */
+/* Tab Layout */
+@media (max-width: 1024px) {
+  .sejarah__section-1 {
+    padding: 80px 64px;
+  }
+
+  .sejarah__section-2 {
+    padding: 80px 64px;
+  }
+
+  .sejarah__kepala-desa-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .sejarah__section-1 {
+    padding: 80px 32px;
+  }
+
+  .sejarah__title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .sejarah__section-2 {
+    padding: 80px 32px;
+  }
+
+  .sejarah__kepala-desa-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sejarah__kepala-desa-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Mobile Small Layout */
+@media (max-width: 425px) {
+  .sejarah__section-1 {
+    padding: 80px 16px;
+  }
+
+  .sejarah__section-2 {
+    padding: 80px 16px;
+  }
+
+  .sejarah__kepala-desa-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

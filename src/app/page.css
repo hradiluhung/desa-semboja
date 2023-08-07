@@ -1,0 +1,683 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  padding: 16px 128px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar__image {
+  width: auto;
+  height: 42px;
+}
+
+.navbar__title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.navbar__navigations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar__navigation {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.navbar__navigation:hover {
+  color: #69b578;
+}
+
+.navbar__navigation--active {
+  color: #69b578;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.navbar__dropdown-content__item {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navbar__dropdown-content__item:hover {
+  color: #69b578;
+}
+
+.navbar__dropdown {
+  cursor: pointer;
+}
+
+.navbar__dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.navbar__hamburger-menu {
+  cursor: pointer;
+}
+
+.navbar__mobile-menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  right: 0;
+  height: 100vh;
+  background: white;
+  color: #363636;
+  z-index: 1;
+  padding: 24px;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__mobile-menu__close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar__mobile-menu__close img {
+  cursor: pointer;
+}
+
+.navbar__mobile-menu__navigations {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navbar__mobile-menu__navigation {
+  display: flex;
+}
+
+.navbar__mobile-menu__dropdown {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.navbar__mobile-menu__dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 16px;
+}
+
+.home {
+  position: relative;
+}
+
+.home__section-1 {
+  padding: 256px 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+
+  background: linear-gradient(
+      0deg,
+      rgba(43, 80, 170, 0.8) 0%,
+      rgba(43, 80, 170, 0.8) 100%
+    ),
+    url("/background.png");
+  background-size: cover;
+  width: 100vw;
+  position: relative;
+  top: -74px;
+}
+
+.home__greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  align-self: stretch;
+  height: 100%;
+}
+
+.home__title:nth-child(1) {
+  color: #fff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home__title:nth-child(2) {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(55deg, #92bcea 0%, #69b578 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home__button {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 48px;
+  background: #69b578;
+  gap: 8px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.home__kabar-terkini {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.home__kabar-terkini_heading {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(55deg, #92bcea 0%, #69b578 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home__kabar-terkini_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.home__kabar-terkini_title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: stretch;
+}
+
+.home__kabar-terkini_title:hover {
+  color: #69b578;
+  transition: 0.3s;
+}
+
+.home__kabar-terkini_date {
+  align-self: stretch;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home__kabar-terkini-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.home__kabar-terkini-link p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.home__section-2 {
+  display: flex;
+  padding: 64px 128px 128px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.home__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.home__profile-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.home__profile-title {
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(55deg, #92bcea 0%, #69b578 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home__profile-subtitle {
+  color: #2b50aa;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.home__profile-description {
+  align-self: stretch;
+  color: #8e8e8e;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home__profile-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.home__profile-items_section {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.home__profile-items_card {
+  display: flex;
+  padding: 26px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.home__profile-items_card-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.home__profile-items_card-title {
+  color: #2b50aa;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.home__profile-items_card-content {
+  align-self: stretch;
+  color: var(--netral-80, #363636);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home__section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  background: #2b50aa;
+  padding: 0px 128px;
+}
+
+.home__kepala-desa {
+  display: flex;
+  padding: 128px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.home__kepala-desa-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.home__kepala-desa_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home__kepala-desa_subtitle {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home__kepala-desa_title {
+  background: linear-gradient(55deg, #92bcea 0%, #69b578 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.home__kepala-desa_description {
+  align-self: stretch;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home__kepala-desa_button {
+  border-radius: 48px;
+  background: #69b578;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__kepala-desa_button p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.home__kepala-desa-image {
+  height: 450px;
+  width: auto;
+}
+
+.home__kepala-desa-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 32px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.home__footer {
+  display: flex;
+  padding: 0px 128px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+/* Tab Layout */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 16px 64px;
+  }
+
+  .home__section-1 {
+    padding: 128px 64px;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .home__section-2 {
+    padding: 0px 64px 128px;
+    flex-direction: column;
+  }
+  .home__section-3 {
+    padding: 0px 64px;
+  }
+  .home__kepala-desa {
+    padding: 64px 64px;
+  }
+  .home__footer {
+    padding: 0px 64px;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 16px;
+  }
+
+  .home__section-1 {
+    padding: 128px 16px;
+  }
+
+  .home__section-2 {
+    padding: 0px 16px 72px;
+  }
+
+  .home__profile-items_card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+  }
+  .home__profile-items_card-title {
+    font-size: 16px;
+  }
+  .home__profile-items_card-content {
+    font-size: 14px;
+  }
+
+  .home__section-3 {
+    padding: 0px 16px;
+  }
+
+  .home__kepala-desa {
+    padding: 32px 0px;
+  }
+
+  .home__kepala-desa_heading {
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .home__kepala-desa_subtitle {
+    font-size: 16px;
+  }
+
+  .home__kepala-desa_title {
+    font-size: 24px;
+  }
+
+  .home__kepala-desa_description {
+    font-size: 14px;
+  }
+
+  .home__kepala-desa-image {
+    height: 300px;
+    width: auto;
+  }
+
+  .home__footer {
+    padding: 0px 32px;
+  }
+}
+
+/* Mobile Small Layout */
+@media (max-width: 425px) {
+  .home__section-1 {
+    padding: 128px 16px;
+  }
+
+  .home__title:nth-child(1) {
+    font-size: 36px;
+  }
+
+  .home__title:nth-child(2) {
+    font-size: 36px;
+  }
+
+  .home__button {
+    font-size: 14px;
+  }
+
+  .home__section-2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  .home__profile-items_card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+  }
+  .home__profile-items_card-title {
+    font-size: 16px;
+  }
+  .home__profile-items_card-content {
+    font-size: 14px;
+  }
+
+  .home__section-3 {
+    padding: 0px 16px;
+    flex-direction: column;
+  }
+
+  .home__kepala-desa {
+    padding: 32px 0px;
+  }
+  .home__kepala-desa-image-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  .home__kepala-desa_heading {
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+  .home__kepala-desa_subtitle {
+    font-size: 16px;
+  }
+  .home__kepala-desa_title {
+    font-size: 24px;
+  }
+  .home__kepala-desa_description {
+    font-size: 14px;
+  }
+  .home__kepala-desa-image {
+    height: 300px;
+    width: auto;
+  }
+  .home__footer {
+    padding: 0px 16px;
+  }
+}

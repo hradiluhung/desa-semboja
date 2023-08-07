@@ -1,0 +1,115 @@
+.create-post__heading {
+  padding: 64px 0px 0px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.create-post__title:nth-child(1) {
+  color: var(--netral-80, #363636);
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.create-post__title:nth-child(2) {
+  background: linear-gradient(55deg, #92bcea 0%, #69b578 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.create-post__section {
+  padding: 69px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.create-post__input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.create-post__label {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--netral-80, #363636);
+}
+
+.create-post__input {
+  padding: 16px 24px;
+  border: 1px solid var(--netral-30, #e5e5e5);
+  border-radius: 8px;
+  background: var(--netral-0, #ffffff);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--netral-80, #363636);
+}
+
+.create-post__button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.create-post__button:nth-child(1) {
+  border-radius: 48px;
+  background: var(--netral-0, #ffffff);
+  border: 1px solid var(--netral-30, #e5e5e5);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: var(--netral-80, #363636);
+}
+
+.create-post__button:nth-child(2) {
+  border-radius: 48px;
+  background: #69b578;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.create-post__preview-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  width: 500px;
+}
+
+.create-post__preview-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.create-post__preview-image-delete {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--danger-40, #e74c3c);
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

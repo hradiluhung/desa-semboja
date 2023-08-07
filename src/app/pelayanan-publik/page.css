@@ -1,0 +1,125 @@
+.pelayanan-publik {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.pelayanan-publik__section {
+  padding: 50px 128px;
+}
+
+.pelayanan-publik__title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.pelayanan-publik__title {
+  color: var(--netral-80, #363636);
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+}
+
+.pelayanan-publik__title:nth-child(2) {
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+  background: linear-gradient(55deg, #92bcea 0%, #69b578 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+}
+
+.pelayanan-publik__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+}
+
+.pelayanan-publik__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background-color: var(--netral-10, #f5f5f5);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.pelayanan-publik__list-item:hover {
+  transform: scale(1.05);
+}
+
+.pelayanan-publik__list-image-container {
+  width: 100%;
+  height: 200px;
+}
+
+.pelayanan-publik__list-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pelayanan-publik__list-title-container {
+  padding: 16px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.pelayanan-publik__list-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--netral-80, #363636);
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+}
+
+.pelayanan-publik__list-date {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--netral-60, #666666);
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+}
+
+.pelayanan-publik__footer {
+  background: #2b50aa;
+  padding: 36px;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.pelayanan-publik__footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pelayanan-publik__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

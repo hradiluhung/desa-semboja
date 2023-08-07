@@ -1,0 +1,179 @@
+.pendidikan__heading {
+  padding: 80px 128px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pendidikan__title:nth-child(1) {
+  color: var(--netral-80, #363636);
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pendidikan__title:nth-child(2) {
+  background: linear-gradient(55deg, #92bcea 0%, #69b578 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.pendidikan__section-1 {
+  padding: 69px 128px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 54px;
+}
+
+.pendidikan__stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pendidikan__stats-value {
+  background: linear-gradient(55deg, #92bcea 0%, #69b578 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.pendidikan__stats-label {
+  color: var(--netral-80, #363636);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pendidikan__section-2 {
+  display: grid;
+  padding: 69px 128px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+}
+
+.pendidikan__card {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+}
+
+.pendidikan__card-title {
+  color: #2b50aa;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.pendidikan__card-text {
+  align-self: stretch;
+  color: var(--netral-80, #363636);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pendidikan__card-text ul {
+  padding-left: 20px;
+}
+
+.pendidikan__footer {
+  background: #2b50aa;
+  padding: 36px;
+  flex-shrink: 0;
+}
+
+.pendidikan__footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Responsive */
+/* Tab Layout */
+@media (max-width: 1024px) {
+  .pendidikan__heading {
+    padding: 80px 64px 0;
+    flex-direction: column;
+  }
+
+  .pendidikan__title:nth-child(2) {
+    text-align: center;
+  }
+
+  .pendidikan__section-1 {
+    padding: 69px 64px 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pendidikan__section-2 {
+    padding: 69px 64px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .pendidikan__heading {
+    padding: 80px 32px 0;
+  }
+
+  .pendidikan__section-1 {
+    padding: 69px 32px 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pendidikan__section-2 {
+    padding: 69px 32px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Mobile Small Layout */
+@media (max-width: 425px) {
+  .pendidikan__heading {
+    padding: 80px 16px 0;
+  }
+
+  .pendidikan__section-1 {
+    padding: 69px 16px 0;
+  }
+
+  .pendidikan__section-2 {
+    padding: 69px 16px;
+  }
+}
