@@ -8,7 +8,7 @@ import axios from "axios";
 import { timestampToIndo } from "../helpers/timeHelper";
 import { Oval } from "react-loader-spinner";
 
-export default function Home() {
+export default function Page() {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 

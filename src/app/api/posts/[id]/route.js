@@ -1,5 +1,8 @@
 import Post from "@/src/models/postModel";
 import { NextRequest, NextResponse } from "next/server";
+import { connect } from "@/src/dbConfig/dbConfig.js";
+
+connect();
 
 export async function GET(request, context) {
   const id = context.params.id;
