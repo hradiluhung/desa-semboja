@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <div className="home__kabar-terkini">
           <h1 className="home__kabar-terkini_heading">Kabar Terkini</h1>
-          {isLoading && (
+          {isLoading ? (
             <div className="home__loading">
               <Oval
                 height={40}
@@ -55,9 +55,8 @@ export default function Home() {
                 strokeWidthSecondary={2}
               />
             </div>
-          )}
-
-          {posts.length > 0 &&
+          ) : (
+            posts.length > 0 &&
             posts.map((post) => (
               <div className="home__kabar-terkini_container" key={post._id}>
                 <Link
@@ -70,7 +69,8 @@ export default function Home() {
                   {timestampToIndo(post.createdAt)}
                 </p>
               </div>
-            ))}
+            ))
+          )}
           <Link className="home__kabar-terkini-link" href="/kabar-desa">
             <p>Lainnya</p>
             <Image src="arrow-right.svg" width={24} height={24} alt="arrow" />
