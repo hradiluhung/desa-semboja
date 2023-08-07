@@ -8,7 +8,7 @@ import { timestampToIndo } from "@/src/helpers/timeHelper";
 import HTMLString from "react-html-string";
 import { Oval } from "react-loader-spinner";
 
-function Page() {
+export default function Page() {
   const { id } = useParams();
   const [post, setPost] = useState({});
   const [isLoading, setIsLoading] = useState(true);
@@ -88,5 +88,3 @@ function Page() {
     </main>
   );
 }
-
-export default page;
