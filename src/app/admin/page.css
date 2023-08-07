@@ -42,6 +42,7 @@
 }
 
 .admin-login__button {
+  cursor: pointer;
   border-radius: 48px;
   background: #69b578;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
@@ -51,4 +52,36 @@
   align-items: center;
   width: 100%;
   font-size: 18px;
+  border: none;
+}
+
+/* Responsive */
+/* Tab Layout */
+@media (max-width: 1024px) {
+  .admin-login__container {
+    padding: 64px;
+  }
+  .admin-login__form {
+    width: 100%;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .admin-login__container {
+    padding: 32px;
+  }
+  .admin-login__form {
+    width: 100%;
+  }
+}
+
+/* Mobile Small Layout */
+@media (max-width: 425px) {
+  .admin-login__container {
+    padding: 16px;
+  }
+  .admin-login__form {
+    width: 100%;
+  }
 }

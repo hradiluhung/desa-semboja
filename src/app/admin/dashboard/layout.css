@@ -16,6 +16,14 @@
   gap: 64px;
 }
 
+.sidebar__hamburger-menu img {
+  cursor: pointer;
+}
+
+.sidebar__mobile-menu__close img {
+  cursor: pointer;
+}
+
 .admin-dashboard__sidebar__heading {
   display: flex;
   align-items: center;
@@ -82,4 +90,46 @@
   margin-right: 128px;
   padding: 16px;
   width: 100%;
+}
+
+.sidebar__mobile-menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  right: 0;
+  height: 100vh;
+  background: white;
+  color: #363636;
+  z-index: 1;
+  padding: 24px;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+/* Tab Layout */
+@media (max-width: 1024px) {
+  .admin-dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar__hamburger-menu {
+    margin-top: 16px;
+    margin-left: 16px;
+  }
+
+  .admin-dashboard__content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+}
+
+/* Mobile Small Layout */
+@media (max-width: 425px) {
 }

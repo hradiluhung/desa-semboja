@@ -133,7 +133,7 @@ export default function Page() {
           <div className="create-post__button-container">
             <button
               type="submit"
-              className="create-post__button"
+              className="edit-post__button"
               disabled={isLoading}
             >
               {isLoading ? (

@@ -260,3 +260,26 @@
   padding: 24px;
   text-align: center;
 }
+
+/* Responsive */
+/* Tab Layout */
+@media (max-width: 1024px) {
+  .kabar-desa__table {
+    width: 100%;
+  }
+
+  .kabar-desa__table-data_image {
+    display: none;
+  }
+
+  .kabar-desa__table-row--heading th:nth-child(2) {
+    display: none;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .kabar-desa__table-data_action-container {
+    flex-direction: column;
+  }
+}
