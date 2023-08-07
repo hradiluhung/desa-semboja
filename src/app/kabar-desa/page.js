@@ -138,7 +138,7 @@ export default function Page() {
             <div className="kabar-desa__trending_list-item">
               {trendingPosts.length > 0 &&
                 trendingPosts.map((post) => (
-                  <>
+                  <React.Fragment key={post._id}>
                     <Link
                       href={`/kabar-desa/${post._id}`}
                       className="kabar-desa__trending_title"
@@ -156,7 +156,7 @@ export default function Page() {
                         {post.viewCount} views
                       </p>
                     </div>
-                  </>
+                  </React.Fragment>
                 ))}
             </div>
           </div>
