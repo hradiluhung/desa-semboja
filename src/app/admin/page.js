@@ -1,20 +1,19 @@
 "use client";
 import React, { useState } from "react";
 import "./page.css";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter();
 
   const onLogin = () => {
     if (username === "admin" && password === "adminsemboja2023") {
       const token = "adminsemboja";
-
       // set token to local storage
-      window.location.href = "/admin/dashboard";
+      router.push("/admin/dashboard");
       window.localStorage.setItem("token", token);
-
-      console.log("token", window.localStorage.getItem("token"));
     } else {
       alert("Username atau Password salah");
     }
@@ -45,9 +44,12 @@ export default function Page() {
             }}
             placeholder="Password"
           />
-          <button onClick={onLogin} className="admin-login__button">
-            Login
-          </button>
+          <input
+            type="submit"
+            onClick={onLogin}
+            className="admin-login__button"
+            value="Login"
+          />
         </div>
       </div>
     </main>

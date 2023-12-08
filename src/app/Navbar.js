@@ -244,6 +244,7 @@ export default function Navbar() {
                   </div>
                   <div className="navbar__mobile-menu__navigations">
                     <Link
+                      onClick={() => setIsMobileMenuOpened(false)}
                       className={`navbar__mobile-menu__navigation ${
                         pathName === "/" ? "navbar__navigation--active" : ""
                       }`}
@@ -275,6 +276,7 @@ export default function Navbar() {
                     {isTentangOpened && (
                       <div className="navbar__mobile-menu__dropdown-content">
                         <Link
+                          onClick={() => setIsMobileMenuOpened(false)}
                           className={`navbar__mobile-menu__dropdown-content__item ${
                             pathName === "/sejarah"
                               ? "navbar__navigation--active"
@@ -285,6 +287,7 @@ export default function Navbar() {
                           Sejarah
                         </Link>
                         <Link
+                          onClick={() => setIsMobileMenuOpened(false)}
                           className={`navbar__mobile-menu__dropdown-content__item ${
                             pathName === "/wilayah"
                               ? "navbar__navigation--active"
@@ -295,6 +298,7 @@ export default function Navbar() {
                           Wilayah
                         </Link>
                         <Link
+                          onClick={() => setIsMobileMenuOpened(false)}
                           className={`navbar__mobile-menu__dropdown-content__item ${
                             pathName === "/lembaga"
                               ? "navbar__navigation--active"
@@ -330,6 +334,7 @@ export default function Navbar() {
                     {isLayananOpened && (
                       <div className="navbar__mobile-menu__dropdown-content">
                         <Link
+                          onClick={() => setIsMobileMenuOpened(false)}
                           className={`navbar__mobile-menu__dropdown-content__item ${
                             pathName === "/transparasi"
                               ? "navbar__navigation--active"
@@ -340,6 +345,7 @@ export default function Navbar() {
                           Transparasi
                         </Link>
                         <Link
+                          onClick={() => setIsMobileMenuOpened(false)}
                           className={`navbar__mobile-menu__dropdown-content__item ${
                             pathName === "/pendidikan"
                               ? "navbar__navigation--active"
@@ -349,10 +355,23 @@ export default function Navbar() {
                         >
                           Pendidikan
                         </Link>
+
+                        <Link
+                          onClick={() => setIsMobileMenuOpened(false)}
+                          className={`navbar__mobile-menu__dropdown-content__item ${
+                            pathName === "/pelayanan-publik"
+                              ? "navbar__navigation--active"
+                              : ""
+                          }`}
+                          href="/pelayanan-publik"
+                        >
+                          Pelayanan Publik
+                        </Link>
                       </div>
                     )}
 
                     <Link
+                      onClick={() => setIsMobileMenuOpened(false)}
                       className={`navbar__navigation ${
                         pathName === "/kabar-desa"
                           ? "navbar__navigation--active"
@@ -363,6 +382,7 @@ export default function Navbar() {
                       Kabar Desa
                     </Link>
                     <Link
+                      onClick={() => setIsMobileMenuOpened(false)}
                       className={`navbar__navigation ${
                         pathName === "/kontak"
                           ? "navbar__navigation--active"

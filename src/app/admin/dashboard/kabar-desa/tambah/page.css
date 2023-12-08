@@ -113,3 +113,125 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Responsive */
+/* Tab Layout */
+@media (max-width: 1024px) {
+  .create-post__heading {
+    padding: 64px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .create-post__section {
+    padding: 69px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .create-post__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .create-post__button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+
+  .create-post__preview-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .create-post__heading {
+    padding: 64px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .create-post__section {
+    padding: 69px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .create-post__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .create-post__button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+
+  .create-post__preview-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+  }
+}
+
+/* Mobile Small Layout */
+@media (max-width: 425px) {
+  .create-post__heading {
+    padding: 64px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .create-post__section {
+    padding: 69px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .create-post__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .create-post__button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+
+  .create-post__preview-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+  }
+}

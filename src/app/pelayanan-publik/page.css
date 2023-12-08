@@ -123,3 +123,42 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Responsive */
+/* Tab Layout */
+@media (max-width: 1024px) {
+  .pelayanan-publik__section {
+    padding: 50px 64px;
+  }
+
+  .pelayanan-publik__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .pelayanan-publik__title-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .pelayanan-publik__section {
+    padding: 50px 32px;
+  }
+
+  .pelayanan-publik__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Small Layout */
+@media (max-width: 425px) {
+  .pelayanan-publik__section {
+    padding: 50px 16px;
+  }
+
+  .pelayanan-publik__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
